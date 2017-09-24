@@ -1,0 +1,190 @@
+nav {
+    li {
+        outline: none;
+        & > a {
+            text-transform: uppercase;
+            color: $white !important;
+            &:hover, &:active, &:focus {
+                color: $white-three;
+                outline: none;
+            }
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $greyish-brown !important;
+ }
+ 
+ :-moz-placeholder {
+    color: $greyish-brown !important;
+ }
+ 
+ ::-moz-placeholder {
+    color: $greyish-brown !important;  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: $greyish-brown !important;  
+ }
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-download {
+    @include maw(736px);
+    text-transform: uppercase;
+    border: solid 0.5px $white;
+    img {
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+}
+
+.full-width {
+    width: 100%;
+}
+
+.container-1140 {
+    @include maw(1140px);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.transition {
+    transition: $transition;
+}
+
+h1, h3, h4, h5, h6, p, small {
+    font-family: $font;
+}
+
+@include define-color('white', $white);
+@include define-color('white-two', $white-two);
+@include define-color('white-three', $white-three);
+@include define-color('dark-grey-blue', $dark-grey-blue);
+@include define-color('greyish-brown', $greyish-brown);
+
+@media only screen and (min-width: $xs) {
+    @include base('.pt-xs', 'padding-top', 20, 10);
+    @include base('.pb-xs', 'padding-bottom', 20, 10);
+    @include base('.mt-xs', 'margin-top', 20, 10);
+    @include base('.mb-xs', 'margin-bottom', 20, 10);
+    @include block-align('xs');
+    
+    nav {
+        li {
+            & > a {
+                font-size: 12px;
+            }
+        }
+    }   
+    header {
+        h1 {
+            font-size: 50px;
+            font-weight: 300;
+        }
+        
+        h2 {
+            font-size: 32px;
+            font-weight: 300;
+        }
+        small {
+            font-size: 14px;
+        }
+    }
+    section {
+        h3 {
+            font-size: 50px;
+            font-weight: 300;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+    }
+    input, textarea, button[type=submit] {
+        margin: 20px 0;
+        padding: 20px 30px !important;
+        font-size: 16px;
+        border-radius: 0 !important;
+        border: solid 1px $dark-grey-blue;
+    }
+    footer {
+        small {
+            font-size: 14px;
+        }
+    }
+    .btn-download {
+        font-size: 26px;
+    }
+    
+}
+
+@media only screen and (min-width: $sm) {
+    @include base('.pt-sm', 'padding-top', 20, 10);
+    @include base('.pb-sm', 'padding-bottom', 20, 10);
+    @include base('.mt-sm', 'margin-top', 20, 10);
+    @include base('.mb-sm', 'margin-bottom', 20, 10);
+    @include block-align('sm');
+
+
+    header {
+        h1 {
+            font-size: 60px;
+            font-weight: 300;
+        }
+        
+        h2 {
+            font-size: 38px;
+            font-weight: 300;
+        }
+    }
+
+}
+
+@media only screen and (min-width: $md) {
+    @include base('.pt-md', 'padding-top', 20, 10);
+    @include base('.pb-md', 'padding-bottom', 20, 10);
+    @include base('.mt-md', 'margin-top', 20, 10);
+    @include base('.mb-md', 'margin-bottom', 20, 10);
+    @include block-align('md');
+
+    header {
+        h1 {
+            font-size: 73px;
+            font-weight: 300;
+        }
+        
+        h2 {
+            font-size: 48px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media only screen and (min-width: $lg) {
+    @include base('.pt-lg', 'padding-top', 20, 10);
+    @include base('.pb-lg', 'padding-bottom', 20, 10);
+    @include base('.mt-lg', 'margin-top', 20, 10);
+    @include base('.mb-lg', 'margin-bottom', 20, 10);
+    @include block-align('lg');
+}
+
+@media only screen and (min-width: $xlg) {
+    @include base('.pt-xlg', 'padding-top', 20, 10);
+    @include base('.pb-xlg', 'padding-bottom', 20, 10);
+    @include base('.mt-xlg', 'margin-top', 20, 10);
+    @include base('.mb-xlg', 'margin-bottom', 20, 10);
+    @include block-align('xlg');
+
+
+hr {
+    position: relative;
+    top: -100px;
+    z-index: -99;
+    border-top: 1px solid #D6D5D5;
+}
+
+}

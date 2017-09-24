@@ -1,0 +1,44 @@
+// !WARNING: Check what you do not use
+
+body {
+    background-color: $white;
+    font-family: $font;
+    flood-color: $greyish-brown;
+    font-weight: 400;
+    color: $greyish-brown;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+strong {
+    font-weight: 600;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, small, li {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: $font;
+    transition : $transition;
+}
+
+::selection {
+    color: $white;
+    background-color: $dark-grey-blue;
+}
+
+@media only screen and (min-width: $xs) {
+}
+
+@media only screen and (min-width: $sm) {
+}
+
+@media only screen and (min-width: $md) {
+}
+
+@media only screen and (min-width: $lg) {
+}

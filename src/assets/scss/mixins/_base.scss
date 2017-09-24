@@ -1,0 +1,7 @@
+@mixin base($class, $property, $amount, $increase) {
+    @for $i from 0 through $amount {
+        #{$class}-#{$i * $increase} {
+            #{$property}: #{$i * $increase}px !important;
+        }
+    }
+}

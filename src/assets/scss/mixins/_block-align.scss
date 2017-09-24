@@ -1,0 +1,19 @@
+@mixin block-align($media) {
+    .center-block-#{$media} {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .left-block-#{$media} {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .right-block-#{$media} {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}

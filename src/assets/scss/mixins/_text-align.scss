@@ -1,0 +1,13 @@
+@mixin text-align($media) {
+    .ta-c-#{$media} {
+        text-align: center;
+    }
+
+    .ta-l-#{$media} {
+        text-align: left;
+    }
+
+    .ta-r-#{$media} {
+        text-align: right;
+    }
+}
