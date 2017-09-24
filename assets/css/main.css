@@ -1552,7 +1552,7 @@ h1, h3, h4, h5, h6, p, small {
 
   hr {
     position: relative;
-    top: -100px;
+    top: -130px;
     z-index: -99;
     border-top: 1px solid #D6D5D5; } }
 .navbar-brand {
@@ -1581,6 +1581,9 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.l-c {
+  padding-left: 28px; }
 
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);

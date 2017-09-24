@@ -79,20 +79,21 @@
                     </div>
                     <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-lg-6 col-lg-offset-1 pt-xs-50 pt-sm-30 pb-xs-50 pb-sm-30 pt-lg-0 pb-lg-0">
                         <div class="row">
-                            <figure class="col-xs-6">
-                                <img class="full-width" src="./assets/img/prof-vahan-agopyan.jpg" alt="">
-                                <figcaption class="mt-xs-10">
-                                    Reitor 
-                                    <br><strong class="c-dark-grey-blue">Vahan Agopyan</strong>
-                                </figcaption>
+                            <figure class="col-xs-12 pt-xs-20">
+                                    <img class="full-width" src="./assets/img/header_juntos_526x398.png" alt="">
                             </figure>
-                            <figure class="col-xs-6">
-                                <img class="full-width" src="./assets/img/prof-vahan-agopyan-copy.jpg" alt="">
-                                <figcaption class="mt-xs-10">
-                                    Vice-Reitor
-                                    <br><strong class="c-dark-grey-blue">Antonio Carlos Hernandes</strong>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12"> 
+                                <figcaption class="mt-xs-10 col-xs-6 l-c">
+                                        Reitor 
+                                        <br><strong class="c-dark-grey-blue">Vahan Agopyan</strong>
                                 </figcaption>
-                            </figure>
+                                <figcaption class="mt-xs-10 col-xs-6">
+                                        Vice-Reitor
+                                        <br><strong class="c-dark-grey-blue">Antonio Carlos Hernandes</strong>
+                                </figcaption>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,7 +144,7 @@
                 <div class="container-1140 pt-xs-100 pb-xs-100 pt-sm-180 pb-sm-180">
                     <div class="row">
                         <figure class="col-xs-8 col-sm-4">
-                            <img class="full-width" src="./assets/img/prof-vahan-agopyan.jpg" alt="">
+                            <img class="full-width" src="./assets/img/bio_vahan.png" alt="">
                         </figure>
                         <article class="col-xs-12 col-xs-offset-0 col-sm-7 col-sm-offset-1">
                             <h3 class="c-dark-grey-blue pt-xs-30 pt-sm-0">Vahan Agopyan</h3>
@@ -171,7 +172,7 @@
                     <div class="row">
 
                         <figure class="col-xs-8 col-xs-offset-0 col-sm-4 col-lg-offset-1  hidden-sm hidden-md hidden-lg hidden-lx">
-                            <img class="full-width" src="./assets/img/prof-vahan-agopyan-copy.jpg" target="_blank" alt="">
+                            <img class="full-width" src="./assets/img/bio_hernandes.png" target="_blank" alt="">
                         </figure>
 
                         <article class="col-xs-12 col-sm-7">
@@ -192,7 +193,7 @@
 
                         </article>
                         <figure class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-1 hidden-xs">
-                            <img class="full-width" src="./assets/img/prof-vahan-agopyan-copy.jpg" target="_blank" alt="">
+                            <img class="full-width" src="./assets/img/bio_hernandes.png" target="_blank" alt="">
                         </figure>
                     </div>
                 </div>
@@ -216,27 +217,29 @@
                     </div>
                     <div class="row mt-xs-40">
                         <div class="col-xs-12 col-xs-offset-0 col-lg-8 col-lg-offset-2">
-                            <form role="form">
+
+                            <form role="form" action="formulario.php" method="post">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Nome completo">
+                                    <input type="text" class="form-control" id="" placeholder="Nome completo" name="nome">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="E-mail">
+                                    <input type="text" class="form-control" id="" placeholder="E-mail" name="email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Sou um">
+                                    <input type="text" class="form-control" id="" placeholder="Sou um" name="sou">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Estado">
+                                    <input type="text" class="form-control" id="" placeholder="Estado" name="estado">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Cidade">
+                                    <input type="text" class="form-control" id="" placeholder="Cidade" name="cidade">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="" id="input${1/(\w+)/\u\1/g}" class="form-control" rows="3" required="required" placeholder="Mensagem"></textarea>
+                                    <textarea name="mensagem" id="input${1/(\w+)/\u\1/g}" class="form-control" rows="3" required="required" placeholder="Mensagem" name="nome"></textarea>
                                 </div>
-                                <button type="submit" class="btn bgc-dark-grey-blue c-white bgc-white-event full-width text-uppercase transition">Enviar mensagem</button>
+                                <button type="submit" name="BTEnvia" class="btn bgc-dark-grey-blue c-white bgc-white-event full-width text-uppercase transition" value="Enviar">Enviar mensagem</button>
                             </form>
+                            
                         </div>
                     </div>
                 </div>
