@@ -1568,6 +1568,9 @@ figcaption {
 h3 {
   text-transform: uppercase; }
 
+select {
+  border-radius: 25px; }
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -1595,6 +1598,10 @@ h3 {
 @media (min-width: 768px) {
   .navbar-toggler {
     display: none; } }
+.form-control {
+  text-transform: uppercase;
+  height: 50px; }
+
 .navbar-toggler {
   background: 0 0;
   border: 1px solid transparent;

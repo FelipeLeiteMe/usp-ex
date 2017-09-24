@@ -21,6 +21,16 @@
         <link rel="stylesheet" href="./assets/css/main.css">
         <!-- endbuild -->
 
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106958845-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106958845-1');
+        </script>
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -31,7 +41,6 @@
 
     <body>
 
-        <!-- <img src="./assets/img/page.png" style="position: absolute; top: 0px; left: 50%; transform: translateX(-50%); z-index: 99; opacity: .5"> -->
         <nav class="navbar-fixed-top bgc-dark-grey-blue" role="navigation">
             <div class="container-1140">
                 <div class="navbar-header" href="#home"> 
@@ -226,7 +235,14 @@
                                     <input type="text" class="form-control" id="" placeholder="E-mail" name="email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="" placeholder="Sou um" name="sou">
+                                        <select type="text" class="form-control" id="" name="sou">
+                                                <option value="selecione">Sou um</option>
+                                                <option value="docente">Docente</option>
+                                                <option value="aluno">Aluno de Graduação</option>
+                                                <option value="pos">Aluno de Pós-Graduação</option>
+                                                <option value="funcionario">Funcionário</option>
+                                                <option value="outro">Outro</option>
+                                        </select>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="" placeholder="Estado" name="estado">
