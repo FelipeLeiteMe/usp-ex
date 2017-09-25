@@ -455,7 +455,7 @@ h1, h3, h4, h5, h6, p, small {
     font-size: 14px;
     line-height: 1.86; }
 
-  input, textarea, button, select[type=submit] {
+  input, textarea, select[type=submit] {
     margin: 20px 0;
     padding: 20px 10px !important;
     font-size: 16px;
@@ -466,7 +466,11 @@ h1, h3, h4, h5, h6, p, small {
     font-size: 14px; }
 
   .btn-download {
-    font-size: 26px; } }
+    font-size: 26px; }
+
+  .e-mail h1 {
+    font-size: 18px;
+    color: #3a2651; } }
 @media only screen and (min-width: 768px) {
   .pt-sm-0 {
     padding-top: 0px !important; }
@@ -740,7 +744,11 @@ h1, h3, h4, h5, h6, p, small {
     font-weight: 300; }
   header h2 {
     font-size: 38px;
-    font-weight: 300; } }
+    font-weight: 300; }
+
+  .e-mail h1 {
+    font-size: 32px;
+    color: #3a2651; } }
 @media only screen and (min-width: 992px) {
   .pt-md-0 {
     padding-top: 0px !important; }
@@ -1654,8 +1662,5 @@ h3 {
 
 .bt-r {
   font-size: 18px; }
-
-.e-mail h1 {
-  color: #3a2651; }
 
 /*# sourceMappingURL=main.css.map */
