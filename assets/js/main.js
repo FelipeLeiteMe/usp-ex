@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('a').each(function () {
             $(this).removeClass('active');
             $(".collapse").removeClass("in");
-        })
+        });
         $(this).addClass('active');
       
         var target = this.hash,
@@ -43,7 +43,17 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
-    
+    $(window).scroll(function () {
+        
+        var position = $(window).scrollTop();
+        // console.log(position);
+        if (position > 450) {
+            // console.log("aqui");
+            $(".navbar-brand").removeClass("hidden-lg");
+        } else {
+            $(".navbar-brand").addClass("hidden-lg");
+        }
+        });
 });
 
 function onScroll(event){
@@ -61,5 +71,5 @@ function onScroll(event){
             console.log("Não");
         }
     });
-    
+
 }
