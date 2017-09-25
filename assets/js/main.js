@@ -43,6 +43,7 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
+    
 });
 
 function onScroll(event){
@@ -53,9 +54,12 @@ function onScroll(event){
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('#menu-center ul li a').removeClass("active");
             currLink.addClass("active");
+            
         }
         else{
             currLink.removeClass("active");
+            console.log("Não");
         }
     });
+    
 }

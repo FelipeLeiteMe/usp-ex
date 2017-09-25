@@ -455,9 +455,9 @@ h1, h3, h4, h5, h6, p, small {
     font-size: 14px;
     line-height: 1.86; }
 
-  input, textarea, button[type=submit] {
+  input, textarea, button, select[type=submit] {
     margin: 20px 0;
-    padding: 20px 30px !important;
+    padding: 20px 10px !important;
     font-size: 16px;
     border-radius: 0 !important;
     border: solid 1px #3a2651; }
@@ -1568,9 +1568,6 @@ figcaption {
 h3 {
   text-transform: uppercase; }
 
-select {
-  border-radius: 25px; }
-
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -1657,5 +1654,8 @@ select {
 
 .bt-r {
   font-size: 18px; }
+
+.e-mail h1 {
+  color: #3a2651; }
 
 /*# sourceMappingURL=main.css.map */

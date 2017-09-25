@@ -15,9 +15,6 @@ h3 {
     text-transform: uppercase;
 }
 
-select {
- border-radius: 25px;   
-}
 
 .video-container {
 	position:relative;
@@ -124,4 +121,8 @@ select {
 
 .bt-r {
     font-size: 18px;
+}
+
+.e-mail h1 {
+    color: $dark-grey-blue;
 }
