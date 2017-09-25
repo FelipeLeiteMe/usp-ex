@@ -43,17 +43,17 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
-    $(window).scroll(function () {
+    // $(window).scroll(function () {
         
-        var position = $(window).scrollTop();
-        // console.log(position);
-        if (position > 450) {
-            // console.log("aqui");
-            $(".navbar-brand").removeClass("hidden-lg");
-        } else {
-            $(".navbar-brand").addClass("hidden-lg");
-        }
-        });
+    //     var position = $(window).scrollTop();
+    //     // console.log(position);
+    //     if (position > 450) {
+    //         // console.log("aqui");
+    //         $(".navbar-brand").removeClass("hidden-lg");
+    //     } else {
+    //         $(".navbar-brand").addClass("hidden-lg");
+    //     }
+    //     });
 });
 
 function onScroll(event){
